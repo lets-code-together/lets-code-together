@@ -7,5 +7,5 @@ if N % 10 == 0:
 else:
     re = int(N /10) + 1
 
-for i in range(re):
+for i in r(re):ange
     print(word[10*i:10*(i+1)])
