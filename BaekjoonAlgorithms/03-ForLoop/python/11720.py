@@ -1,7 +1,11 @@
-N = int(input()) # ìˆ«ìì˜ ê°œìˆ˜
-number = list(input()) # í•©í•  ìˆ«ì
-sum = 0
+# ÁÖ¾îÁø ¼ö ¸ğµÎ ´õÇÏ±â
 
-for n in number:
-    sum += int(n)
+N = int(input()) # ¼ıÀÚÀÇ °³¼ö
+number = list(input()) # ´õÇÒ ¼ıÀÚ
+
+def number_sum(N, number):
+    sum = 0
+    for n in number:
+        sum += int(n)
+
 print(sum)

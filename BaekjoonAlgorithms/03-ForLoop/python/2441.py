@@ -1,3 +1,8 @@
+# º° Âï±â-4
+
 N = int(input())
-for i in range(N):
-    print((" " * i) + ("*" * (N-i)))
+
+def star_4(N):
+    for i in range(N):
+        print((" " * i) + ("*" * (N-i)))
+
