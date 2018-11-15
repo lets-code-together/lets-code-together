@@ -1,8 +1,8 @@
-# º° Âï±â1
+# ë³„ ì°ê¸° - 1
 
 N = int(input())
 
-def star_1(N):
+
+def star_one(N):
     for i in range(1, N+1):
         print("*" * i)
-

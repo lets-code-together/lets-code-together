@@ -1,8 +1,10 @@
-x, y = map(int, input().split()) # ¿ù, ÀÏ ÀÔ·Â
-total_day = y # 2007³â 1¿ù 1ÀÏ·ÎºÎÅÍ ¸çÄ¥ Áö³µ´Â°¡
+# 2007ë…„ ë‚ ì§œì— ë”°ë¥¸ ìš”ì¼ êµ¬í•˜ê¸°
+
+x, y = map(int, input().split())  # ì›”, ì¼ ì…ë ¥
+total_day = y  # 2007ë…„ 1ì›” 1ì¼ë¡œë¶€í„° ì§€ë‚œ ì¼ìˆ˜
 
 
-def x_day(x): # x¿ùÀÇ ÀÏ¼ö
+def x_day(x):  # xì›”ì˜ ì¼ìˆ˜
     if x == 1 or x == 3 or x == 5 or x == 7 or x == 8 or x == 10 or x == 12:
         day = 31
     elif x == 4 or x == 6 or x == 9 or x == 11:

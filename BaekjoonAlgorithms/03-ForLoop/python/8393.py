@@ -1,10 +1,12 @@
-# 1ºÎÅÍ N±îÁö ÇÕ ±¸ÇÏ±â
+# 1ë¶€í„° Nê¹Œì§€ì˜ í•© êµ¬í•˜ê¸°
 
-n = int(input())
+N = int(input())
 
-def 1_N_sum(n):
-    sum = 0
-    for i in range(1, n+1):
-        sum += i
+
+def one_n_sum(N):
+    _sum = 0
+    for i in range(1, N+1):
+        _sum += i
+
 
 print(sum)

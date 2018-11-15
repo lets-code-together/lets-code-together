@@ -1,18 +1,18 @@
-# ¿­°³¾¿ ²÷¾î Ãâ·ÂÇÏ±â
+# 10ê°œì”© ëŠì–´ ì¶œë ¥í•˜ê¸°
 
-word = list(input()) # ´Ü¾î ÀÔ·Â
+word = list(input()) # ë‹¨ì–´ ì…ë ¥
 
-# ¸î ÁÙ¿¡ °ÉÃÄ Ãâ·Â ÇÒ °ÍÀÎ°¡
-def 10_print(word):
+
+def printing_breaks(word):  # ëª‡ ì¤„ì— ê±¸ì³ ì¶œë ¥í•  ê²ƒì¸ê°€
     N = len(word)
     
     if N % 10 == 0:
         re = N
     else:
-        re = int(N /10) + 1
+        re = int(N / 10) + 1
 
     for i in range(re):
         print(word[10*i:10*(i+1)])
 
-10_print(word)
 
+printing_breaks(word)

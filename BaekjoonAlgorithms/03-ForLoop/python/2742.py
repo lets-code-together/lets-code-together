@@ -1,8 +1,9 @@
-# NºÎÅÍ 1±îÁö Ãâ·ÂÇÏ±â
+# Në¶€í„° 1ê¹Œì§€ ì¶œë ¥í•˜ê¸°
 
 N = int(input())
 
-def N_1_print(N):
+
+def n_one_output(N):
     for i in range(N, 0, -1):
         print(i)
 
