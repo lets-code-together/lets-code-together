@@ -8,6 +8,7 @@ D = int(input())
 E = int(input())
 score = [A, B, C, D, E]
 
+
 def avg_score(score):
     sum = 0
     for i in range(len(score)):
