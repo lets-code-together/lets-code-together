@@ -23,7 +23,6 @@ def exceed_avg(test):
                 count += 1
         exceed_ratio.append(count / test[i][0] * 100)  # 각 테스트 평균 넘는 비율
 
-
     return exceed_ratio
 
 

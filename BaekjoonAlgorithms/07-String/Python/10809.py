@@ -12,4 +12,5 @@ def alphabet_find(word):
 
     return word_find
 
+
 print(" ".join(alphabet_find(word)))

@@ -12,4 +12,5 @@ def less_than(A, X):
 
     return less_than
 
+
 print(" ".join(less_than(A, X)))
