@@ -15,9 +15,9 @@ def most_used(word):
     most_used = [ABC for ABC, count in word_count.items() if count == max(word_count.values())]
 
     if len(most_used) == 1:
-        print(most_used[0])
+        return most_used[0]
     else:
-        print("?")  # 가장 많이 사용된 알파벳이 여러 개 존재하는 경우 ? 출력
+        return "?"  # 가장 많이 사용된 알파벳이 여러 개 존재하는 경우 ? 출력
 
 
-most_used(word)
+print(most_used(word))

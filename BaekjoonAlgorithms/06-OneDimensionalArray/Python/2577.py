@@ -7,8 +7,11 @@ C = int(input())
 
 def count_array(A, B, C):
     num = list(str(A * B * C))
+    num_count = []
     for i in range(10):
-        print(num.count(str(i)))
+        num_count.append(str(num.count(str(i))))
+
+    return num_count
 
 
-count_array(A, B, C)
+print("\n".join(count_array(A, B, C)))

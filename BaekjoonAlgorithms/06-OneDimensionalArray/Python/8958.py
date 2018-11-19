@@ -2,13 +2,13 @@
 # O가 연속으로 나오면 점수는 연속된 O의 개수가 된다.
 
 test_count = int(input())  # 테스트 개수
-test = []  # 각 테스트의 점수
+test = []  # 각 테스트의 OX 입력
 for i in range(test_count):
     test.append(list(input()))
 
 
 def ox_score(test):
-    each_score = []
+    each_score = []  # 각 테스트 점수
     for i in range(len(test)):
         score = 0  # 점수
         x = 0  # O가 나오면 +1, X가 나오면 초기화할 변수
@@ -18,7 +18,9 @@ def ox_score(test):
                 score += x
             if test[i][j] == 'X':
                 x = 0
-        print(score)
+        each_score.append(str(score))
+
+    return each_score
 
 
-ox_score(test)
+print("\n".join(ox_score(test)))

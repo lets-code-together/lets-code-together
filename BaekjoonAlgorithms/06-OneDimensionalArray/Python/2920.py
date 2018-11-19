@@ -7,11 +7,11 @@ def musical_scales(number):
     scale = "".join(number)
 
     if scale == '12345678':
-        print("ascending")
+        return "ascending"
     elif scale == '87654321':
-        print("descending")
+        return "descending"
     else:
-        print("mixed")
+        return "mixed"
 
 
-musical_scales(number)
+print(musical_scales(number))

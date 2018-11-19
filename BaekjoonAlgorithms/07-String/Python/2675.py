@@ -7,10 +7,16 @@ for i in range(test_count):
 
 
 def spring_repeat(test):
+    new_spring = []  # 새 문자열 P
+
     for i in range(len(test)):
+        _spring = ""
         for j in range(2, len(test[i])):
-            print(test[i][j] * int(test[i][0]), end='')
-        print()
+            _spring += test[i][j] * int(test[i][0])
+        new_spring.append(_spring)
+
+    return new_spring
 
 
-spring_repeat(test)
+for i in range(len(test)):
+    print(spring_repeat(test)[i])
