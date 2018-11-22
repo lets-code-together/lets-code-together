@@ -6,6 +6,7 @@ int main()
 {
 	int n;
 	scanf_s("%d", &n);
+	
 	if (90 <= n && n <= 100)
 		printf("A");
 	else if (80 <= n && n <= 89)
