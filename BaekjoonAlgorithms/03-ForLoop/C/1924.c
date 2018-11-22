@@ -51,5 +51,4 @@ int main()
 	case 6: printf("SAT\n"); break;
 	case 0: printf("SUN\n"); break;
 	}
-	
 }
