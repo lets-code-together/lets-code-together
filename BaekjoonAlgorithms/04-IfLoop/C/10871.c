@@ -1,4 +1,4 @@
-/*Á¤¼ö N°³·Î ÀÌ·ç¾îÁø ¼ö¿­ A¿Í Á¤¼ö X°¡ ÁÖ¾îÁú ¶§ A¿¡¼­ Xº¸´Ù ÀÛÀº ¼ö¸¦ ¸ðµÎ Ãâ·ÂÇÏ±â*/
+/*ì •ìˆ˜ Nê°œë¡œ ì´ë£¨ì–´ì§„ ìˆ˜ì—´ Aì™€ ì •ìˆ˜ Xê°€ ì£¼ì–´ì§ˆ ë•Œ Aì—ì„œ Xë³´ë‹¤ ìž‘ì€ ìˆ˜ë¥¼ ëª¨ë‘ ì¶œë ¥í•˜ê¸°*/
 
 #include <stdio.h>
 
@@ -22,5 +22,4 @@ int main()
 	printf("\n");
 
 	return 0;
-
 }
