@@ -1,7 +1,6 @@
-/*µÎ Á¤¼ö A¿Í B¸¦ ÀÔ·Â¹ÞÀº ´ÙÀ½ A/B Ãâ·ÂÇÏ±â*/
+/*ë‘ ì •ìˆ˜ Aì™€ Bë¥¼ ìž…ë ¥ë°›ì€ ë‹¤ìŒ A/B ì¶œë ¥í•˜ê¸°*/
 
 #include <stdio.h>
-
 
 int main()
 {
