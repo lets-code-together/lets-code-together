@@ -1,4 +1,4 @@
-/*3kgºÀÁö¿Í 5kgºÀÁö°¡ ÀÖÀ» ¶§, ÃÖ´ëÇÑ Àû°Ô µé°í °¥ ¼ö ÀÖ´Â ºÀÁö ¼ö ±¸ÇÏ±â*/
+/*3kgë´‰ì§€ì™€ 5kgë´‰ì§€ê°€ ìžˆì„ ë•Œ, ìµœëŒ€í•œ ì ê²Œ ë“¤ê³  ê°ˆ ìˆ˜ ìžˆëŠ” ë´‰ì§€ ìˆ˜ êµ¬í•˜ê¸°*/
 
 #include <stdio.h>
 
@@ -6,6 +6,7 @@ int main()
 {
 	int n;
 	scanf_s("%d", &n);
+	
 	for (int i = 0; i <= n; i++) {
 		for (int j = 0; j <= n; j++) {
 			if ((3 * i) + (5 * j) == n) {
