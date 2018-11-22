@@ -1,4 +1,4 @@
-/*Ã¹¹øÂ° ÁÙ¿¡ N°³ ~ N¹øÂ° ÁÙ¿¡ 1°³ Ãâ·ÂÇÏ±â(¿À¸¥ÂÊ Á¤·Ä)*/
+/*ì²«ë²ˆì§¸ ì¤„ì— Nê°œ ~ Në²ˆì§¸ ì¤„ì— 1ê°œ ì¶œë ¥í•˜ê¸°(ì˜¤ë¥¸ìª½ ì •ë ¬)*/
 
 #include <stdio.h>
 
@@ -6,6 +6,7 @@ int main()
 {
 	int n, i, j, k;
 	scanf_s("%d", &n);
+	
 	for (i = 1; i <= n; i++) {
 		for (k = 2; k <= i; k++) {
 			printf(" ");
