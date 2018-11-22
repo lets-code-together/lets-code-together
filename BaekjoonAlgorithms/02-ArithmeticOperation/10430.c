@@ -1,5 +1,4 @@
-/*(A+B)%C´Â (A%C + B%C)%C¿Í °°À»±î?*/
-/*(AxB)%C´Â (A%C x B%C)%C¿Í °°À»±î?*/
+/*(A+B)%C, (A%C + B%C)%C, (AxB)%C, (A%C x B%C)%C ê°’ ì¶œë ¥í•˜ê¸°*/
 
 #include <stdio.h>
 
