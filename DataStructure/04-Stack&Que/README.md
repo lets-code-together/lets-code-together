@@ -2,7 +2,7 @@
 입력과 출력을 한 방향으로 제한한 자료구조.  
 가장 나중에 넣은 데이터를 가장 먼저 꺼내는 후입선출(LIFO, Last In First Out) 구조이다.  
 스택에 데이터를 넣는 작업을 push, 데이터를 꺼내는 작업을 pop이라고 한다.  
-![stack](lets-code-together/DataStructure/04-Stack&Que/stack.JPG)  
+![stack](/asset/stack.JPG)  
 배열을 이용한 int형 스택 구현  
 ~~~
 #include<stdio.h>
@@ -112,7 +112,7 @@ void Terminate(IntStack *s)
 한쪽 끝에서만 자료를 넣고 뺄 수 있는 자료구조.  
 가장 먼저 넣은 데이터를 가장 먼저 꺼내는 선입선출(FiFO, First In First Out) 구조이다.  
 큐에 데이터를 넣는 작업을 push, 데이터를 꺼내는 작업을 get이라고 한다.  
-![que](lets-code-together/DataStructure/04-Stack&Que/que.JPG)   
+![que](asset/que.JPG)   
 링 버퍼를 이용한 큐 구현  
 ~~~
 #include <stdio.h>
@@ -237,4 +237,4 @@ void Terminate(IntQueue *q)
 # Deque(double ended queqe)
 양쪽 끝에서 자료를 넣고 뺄 수 있는 자료구조.  
 덱을 이용하면 스택과 큐를 구현할 수 있다.  
-![deque](lets-code-together/DataStructure/04-Stack&Que/deque.JPG)
+![deque](asset/deque.JPG)
