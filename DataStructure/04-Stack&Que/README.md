@@ -3,7 +3,7 @@
 가장 나중에 넣은 데이터를 가장 먼저 꺼내는 후입선출(LIFO, Last In First Out) 구조이다.  
 스택에 데이터를 넣는 작업을 push, 데이터를 꺼내는 작업을 pop이라고 한다.  
 
-![stack](./04-Stack&Que/stack.jpg)  
+![stack](./DataStructure/04-Stack&Que/stack.JPG)  
 배열을 이용한 int형 스택 구현  
 ~~~
 #include<stdio.h>
@@ -114,7 +114,7 @@ void Terminate(IntStack *s)
 가장 먼저 넣은 데이터를 가장 먼저 꺼내는 선입선출(FiFO, First In First Out) 구조이다.  
 큐에 데이터를 넣는 작업을 push, 데이터를 꺼내는 작업을 get이라고 한다.  
 
-![que](./04-Stack&Que/que.jpg) 
+![que](./DataStructure/04-Stack&Que/que.JPG) 
 링 버퍼를 이용한 큐 구현
 ~~~
 #include <stdio.h>
