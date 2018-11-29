@@ -112,7 +112,7 @@ void Terminate(IntStack *s)
 한쪽 끝에서만 자료를 넣고 뺄 수 있는 자료구조.  
 가장 먼저 넣은 데이터를 가장 먼저 꺼내는 선입선출(FiFO, First In First Out) 구조이다.  
 큐에 데이터를 넣는 작업을 push, 데이터를 꺼내는 작업을 get이라고 한다.  
-![que](./DataStructure/04-Stack&Que/que.JPG) 
+![que](./DataStructure/04-Stack&Que/que.JPG)   
 링 버퍼를 이용한 큐 구현  
 ~~~
 #include <stdio.h>
