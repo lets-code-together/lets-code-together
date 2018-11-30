@@ -1,5 +1,4 @@
 ﻿/*평균점수 구하기*/
-
 #include <stdio.h>
 
 int main()
