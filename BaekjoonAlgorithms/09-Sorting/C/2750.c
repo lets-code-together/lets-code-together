@@ -26,17 +26,13 @@ int main()
 	x = calloc(nx, sizeof(int));
 
 	for (i = 0; i < nx; i++)
-	{
 		scanf_s("%d", &x[i]);
-	}
 	
-
 	bubble(x, nx);
 
 	for (i = 0; i < nx; i++)
-	{
 		printf("%d\n", x[i]);
-	}
+	
 	free(x);
 
 	return 0;
