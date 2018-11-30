@@ -9,12 +9,14 @@ int main()
 	scanf_s("%d %d %d", &a, &b, &c);
 	int mul = a * b * c;
 
-	while (mul) {
+	while (mul)
+	{
 		arr[mul % 10]++;
 		mul /= 10;
 	}
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 10; i++)
+	{
 		printf("%d\n", arr[i]);
 	}
 }
