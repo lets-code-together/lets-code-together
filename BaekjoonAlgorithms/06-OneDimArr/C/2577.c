@@ -1,5 +1,4 @@
 ﻿/*결과의 숫자가 각각 몇 번 쓰였는지 구하기*/
-
 #include <stdio.h>
 
 int main()
