@@ -13,7 +13,6 @@ int main()
 	{
 		if (arr[i] >= 40)
 			sum += arr[i];
-		
 		else
 			sum += 40;
 	}
