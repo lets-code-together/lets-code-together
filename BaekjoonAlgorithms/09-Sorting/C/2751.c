@@ -29,10 +29,8 @@ void heapsort(int a[], int n)
 	int i;
 
 	for (i = (n - 1) / 2; i >= 0; i--)
-	{
 		downheap(a, i, n - 1);
-	}
-
+	
 	for (i = n - 1; i > 0; i--)
 	{
 		swap(int, a[0], a[i]);
@@ -48,15 +46,13 @@ int main()
 	x = calloc(nx, sizeof(int));
 
 	for (i = 0; i < nx; i++)
-	{
 		scanf_s("%d", &x[i]);
-	}
+	
 	heapsort(x, nx);
 
 	for (i = 0; i < nx; i++)
-	{
 		printf("%d\n", x[i]);
-	}
+	
 	free(x);
 
 	return 0;
