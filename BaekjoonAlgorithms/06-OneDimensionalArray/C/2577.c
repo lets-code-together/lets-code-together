@@ -1,4 +1,4 @@
-/*¼¼ °³ÀÇ ÀÚ¿¬¼ö¸¦ °öÇßÀ» °æ¿ì 0ºÎÅÍ9±îÁöÀÇ °³¼ö*/
+/*ì„¸ ê°œì˜ ìì—°ìˆ˜ë¥¼ ê³±í–ˆì„ ê²½ìš° 0ë¶€í„°9ê¹Œì§€ì˜ ê°œìˆ˜*/
 #include <stdio.h>
 
 int main()
@@ -6,17 +6,16 @@ int main()
     int a,b,c;
     int x;
     char num[11]={0,};
-    
-	scanf("%d",&a);
+    scanf("%d",&a);
     scanf("%d",&b);
     scanf("%d",&c);
     x=a*b*c;
     
-	while(x>0) //1ÀÇÀÚ¸®¼ıÀÚÀÇ °³¼ö
+	while(x>0) //1ì˜ìë¦¬ìˆ«ìì˜ ê°œìˆ˜
 	{
         num[x%10]++;
 		x=x/10;
-    }
+	}
     printf("%d\n",num[0]);
     printf("%d\n",num[1]);
     printf("%d\n",num[2]);
