@@ -1,5 +1,6 @@
-/*ÀÚ¿¬¼ö A, B, C°¡ ÁÖ¾îÁú ¶§ A¡¿B¡¿C¸¦ °è»êÇÑ °á°ú¿¡ 0ºÎÅÍ 9±îÁö °¢°¢ÀÇ ¼ýÀÚ°¡ ¸î ¹ø¾¿ ¾²¿´´ÂÁö ±¸ÇÏ¶ó*/
+/*ìžì—°ìˆ˜ A, B, Cê°€ ì£¼ì–´ì§ˆ ë•Œ AÃ—BÃ—Cë¥¼ ê³„ì‚°í•œ ê²°ê³¼ì— 0ë¶€í„° 9ê¹Œì§€ ê°ê°ì˜ ìˆ«ìžê°€ ëª‡ ë²ˆì”© ì“°ì˜€ëŠ”ì§€ êµ¬í•˜ë¼*/
 #include <stdio.h>
+
 int main() 
 {
 	int a, b, c, cnt[10] = { 0, };
