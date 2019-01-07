@@ -18,13 +18,12 @@ int main(void)
             b = (i / 10) % 10;  // 10의 자리
             c = i % 10;         // 1의 자리
  
-<<<<<<< HEAD:BaekjoonAlgorithms/05-Funtion/C/1065.c
 		   if ((a - b) == (b - c))
                cnt++;
-=======
+		
 	    if ((a - b) == (b - c))
                 cnt++;
->>>>>>> 0b7409a7dac736315747680dbacd5b34589d48c6:BaekjoonAlgorithms/05-Funtion/1065.c
+
         
         }
 	    printf("%d", cnt);
