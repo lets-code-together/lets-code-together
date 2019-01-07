@@ -1,7 +1,8 @@
-/*´ÙÀÌ¾ó °É¶§ °É¸®´Â ½Ã°£ÀÇ ÇÕ*/
+/*ë‹¤ì´ì–¼ ê±¸ë•Œ ê±¸ë¦¬ëŠ” ì‹œê°„ì˜ í•©*/
 #include <stdio.h>
 #include <string.h>
-main() 
+
+int main() 
 {
 	char str[16];	
 	int length, i, x = 0;
