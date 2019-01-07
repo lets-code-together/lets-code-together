@@ -1,6 +1,7 @@
-/*Å©±â¼øÀ¸·Î Á¤·Ä*/
+/*í¬ê¸°ìˆœìœ¼ë¡œ ì •ë ¬*/
 #include<stdio.h>
-main() 
+
+int main() 
 {
 	int i, arr[1000] = { 0, }, n, temp, j;
 	scanf("%d", &n);
