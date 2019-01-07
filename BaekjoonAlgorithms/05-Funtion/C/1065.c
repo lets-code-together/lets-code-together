@@ -23,8 +23,6 @@ int main(void)
 		
 	    if ((a - b) == (b - c))
                 cnt++;
-
-        
         }
 	    printf("%d", cnt);
      }
