@@ -18,11 +18,11 @@ int main(void)
             b = (i / 10) % 10;  // 10의 자리
             c = i % 10;         // 1의 자리
  
-		   if ((a - b) == (b - c))
-               cnt++;
+		if ((a - b) == (b - c))
+			cnt++;
 		
-	    if ((a - b) == (b - c))
-                cnt++;
+		if ((a - b) == (b - c))
+			cnt++;
         }
 	    printf("%d", cnt);
      }
