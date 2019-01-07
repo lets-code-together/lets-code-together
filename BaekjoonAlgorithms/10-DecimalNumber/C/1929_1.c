@@ -1,5 +1,6 @@
 /*M이상 N이하의 소수를 모두 출력해라(기존의 for이중구문X,에라스토테네스O) */
 #include<stdio.h>
+
 int main()
 {
 	int M, N, i, j, a[1000001] = { 0, };
