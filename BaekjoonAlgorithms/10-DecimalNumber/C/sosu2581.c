@@ -1,4 +1,4 @@
-/*M°ú N»çÀÌÀÇ ¼Ò¼ö Ã£±â*/
+/*M과 N사이의 소수 찾기*/
 #include <stdio.h>
 
 int Sosu(int n);
