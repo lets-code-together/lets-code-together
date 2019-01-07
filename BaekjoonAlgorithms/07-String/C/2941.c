@@ -1,11 +1,11 @@
-/*Å©·Î¾ÆÆ¼¾Æ ¾ËÆÄºª*/
+/*í¬ë¡œì•„í‹°ì•„ ì•ŒíŒŒë²³*/
 #include <stdio.h>
 #include <string.h>
 
 int i, c;
 char s[102];
 
-main() 
+int main() 
 {
 	scanf("%s", s);
 	while (i < strlen(s)) 
