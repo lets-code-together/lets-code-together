@@ -1,4 +1,4 @@
-/*´ÙÀÌ¾ó*/
+/*ë‹¤ì´ì–¼*/
 #include <iostream>
 #include <string>
  
@@ -12,9 +12,9 @@ int main(void)
     cin >> input;
  
     for(int i=0; i<input.length(); i++) 
-	{
+    {
         switch(input.at(i)) 
-		{
+	{
             case 'A':
             case 'B':
             case 'C':
