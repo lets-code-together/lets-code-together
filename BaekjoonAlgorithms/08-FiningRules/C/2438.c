@@ -1,6 +1,7 @@
-/*Ã¹Â° ÁÙ¿¡´Â º° 1°³, µÑÂ° ÁÙ¿¡´Â º° 2°³, N¹øÂ° ÁÙ¿¡´Â º° N°³¸¦ Âï´Â ¹®Á¦*/
+/*ì²«ì§¸ ì¤„ì—ëŠ” ë³„ 1ê°œ, ë‘˜ì§¸ ì¤„ì—ëŠ” ë³„ 2ê°œ, Në²ˆì§¸ ì¤„ì—ëŠ” ë³„ Nê°œë¥¼ ì°ëŠ” ë¬¸ì œ*/
 #include <stdio.h>
-main()
+
+int main()
 {
 	int n, i, j;
 
