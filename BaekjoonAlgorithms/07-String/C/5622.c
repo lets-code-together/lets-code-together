@@ -1,33 +1,67 @@
-/*다이얼 걸때 걸리는 시간의 합*/
-#include <stdio.h>
-#include <string.h>
-
-int main() 
+/*다이얼*/
+#include <iostream>
+#include <string>
+ 
+using namespace std;
+ 
+int main(void) 
 {
-	char str[16];	
-	int length, i, x = 0;
-	
-	gets(str);	
-	
-	length = strlen(str); 
-	for (i = 0; i < length; i++) 
+    int sec[10] = {11,2,3,4,5,6,7,8,9,10};
+    string input;
+    int totalSec = 0;
+    cin >> input;
+ 
+    for(int i=0; i<input.length(); i++) 
+    {
+        switch(input.at(i)) 
 	{
-		if (('A' <= str[i]) && (str[i] <= 'C'))
-			x += 3;
-		else if (('D' <= str[i]) && (str[i] <= 'F'))
-			x += 4;
-		else if (('G' <= str[i]) && (str[i] <= 'I'))
-			x += 5;
-		else if (('J' <= str[i]) && (str[i] <= 'L'))
-			x += 6;
-		else if (('M' <= str[i]) && (str[i] <= 'O'))
-			x += 7;
-		else if (('P' <= str[i]) && (str[i] <= 'S'))
-			x += 8;
-		else if (('T' <= str[i]) && (str[i] <= 'V'))
-			x += 9;
-		else if (('W' <= str[i]) && (str[i] <= 'Z'))
-			x += 10;
-	}
-	printf("%d", x);
+            case 'A':
+            case 'B':
+            case 'C':
+                totalSec += sec[2];
+                break;
+            case 'D':
+            case 'E':
+            case 'F':
+                totalSec += sec[3];
+                break;
+            case 'G':
+            case 'H':
+            case 'I':
+                totalSec += sec[4];
+                break;
+            case 'J':
+            case 'K':
+            case 'L':
+                totalSec += sec[5];
+                break;
+            case 'M':
+            case 'N':
+            case 'O':
+                totalSec += sec[6];
+                break;
+            case 'P':
+            case 'Q':
+            case 'R':
+            case 'S':
+                totalSec += sec[7];
+                break;
+            case 'T':
+            case 'U':
+            case 'V':
+                totalSec += sec[8];
+                break;
+            case 'W':
+            case 'X':
+            case 'Y':
+            case 'Z':
+                totalSec += sec[9];
+                break;
+        }
+    }
+ 
+    cout << totalSec << "\n";
+ 
+    return 0;
+
 }

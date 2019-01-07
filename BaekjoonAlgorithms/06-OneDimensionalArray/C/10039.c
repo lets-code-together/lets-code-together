@@ -1,18 +1,19 @@
-/*40점이상은 그대로 40점미만은 40점이라 할때 5명의 점수 평균을 구해라*/
+/*5명의 점수를 받고 40점 미만점수는 40점으로 고정*/
 #include <stdio.h>
 
-int main() 
+int main()
 {
-	int num, sum = 0;
-	for (int i = 0; i < 5; i++)
-	{
-		scanf("%d", &num);
-		if (num < 40)
-		{
-			sum += 40;
-		}
-		else
-			sum += num;
-	}
-	printf("%d\n", sum / 5);
+    int score[5] = {0, }, i, sum = 0;
+    
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &score[i]);
+        
+        if(score[i] <= 40) //40점 미만의 학생은 그냥 40점
+			score[i] = 40;
+        
+        sum += score[i];
+    }
+    
+    printf("%d", sum/5);
 }

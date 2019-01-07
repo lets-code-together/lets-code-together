@@ -1,54 +1,29 @@
-/*자연수 A, B, C가 주어질 때 A×B×C를 계산한 결과에 0부터 9까지 각각의 숫자가 몇 번씩 쓰였는지 구하라*/
+/*세 개의 자연수를 곱했을 경우 0부터9까지의 개수*/
 #include <stdio.h>
 
-int main() 
+int main()
 {
-	int a, b, c, cnt[10] = { 0, };
-	int result = 0;
-	scanf("%d %d %d", &a, &b, &c);
-	result = a * b*c;
-	while (result > 0) 
+    int a,b,c;
+    int x;
+    char num[11]={0,};
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    x=a*b*c;
+    
+	while(x>0) //1의자리숫자의 개수
 	{
-		switch (result % 10) 
-		{
-		case 0:
-			cnt[0]++;
-			break;
-		case 1:
-			cnt[1]++;
-			break;
-		case 2:
-			cnt[2]++;
-			break;
-		case 3:
-			cnt[3]++;
-			break;
-		case 4:
-			cnt[4]++;
-			break;
-		case 5:
-			cnt[5]++;
-			break;
-		case 6:
-			cnt[6]++;
-			break;
-		case 7:
-			cnt[7]++;
-			break;
-		case 8:
-			cnt[8]++;
-			break;
-		case 9:
-			cnt[9]++;
-			break;
-		}
-		result /= 10;
+        num[x%10]++;
+		x=x/10;
 	}
-	int i = 0;
-	while (i < 10) 
-	{
-		printf("%d\n", cnt[i]);
-		i++;
-	}
-	return 0;
+    printf("%d\n",num[0]);
+    printf("%d\n",num[1]);
+    printf("%d\n",num[2]);
+    printf("%d\n",num[3]);
+    printf("%d\n",num[4]);
+    printf("%d\n",num[5]);
+    printf("%d\n",num[6]);
+    printf("%d\n",num[7]);
+    printf("%d\n",num[8]);
+    printf("%d\n",num[9]);
 }

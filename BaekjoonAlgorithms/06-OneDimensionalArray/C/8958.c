@@ -1,28 +1,34 @@
-/* O´Â ¹®Á¦¸¦ ¸ÂÀº °ÍÀÌ°í, X´Â ¹®Á¦¸¦ Æ²¸° °ÍÀÌ´Ù. ¹®Á¦¸¦ ¸ÂÀº °æ¿ì ±× ¹®Á¦ÀÇ Á¡¼ö´Â ±× ¹®Á¦±îÁö ¿¬¼ÓµÈ OÀÇ °³¼ö°¡ µÈ´Ù. */
-#include<stdio.h>
-#include<string.h>
-char OX[82];
+/*ì—°ì†ëœ oì˜ ì ìˆ˜ì˜ í•©*/
+#include <stdio.h>
+#include <string.h>
 
 int main()
 {
-	int test, score, sum;
-
-	scanf("%d", &test);
-	for (int i = 0; i < test; i++)
+	int i, cnt = 0, sum = 0, n, length = 0, j;
+	char OX[100] = " "; //ë¬¸ìì—´ì˜ ê°œìˆ˜
+	
+	scanf("%d", &n);
+	
+	for(i = 0; i < n; i++)
 	{
-		sum = 0;
-		score = 1;
-		scanf("%s", &OX);
-		for (int j = 0; j < strlen(OX); j++)
+		scanf("%s", OX);
+		length = strlen(OX);
+		
+		sum = 0; cnt = 0;
+		
+		for(j = 0; j < length; j++)
 		{
-			if (OX[j] == 'O')
+			if(OX[j] == 'X') //Xì¼ ê²½ìš° 0ìœ¼ë¡œ ì„¼ë‹¤
+				cnt = 0;
+			else //Oì¼ê²½ìš° ì¹´ìš´íŠ¸ë¥¼ ì„¸ê³  í•©í•´ì¤€ë‹¤.
 			{
-				sum += score;
-				score++;
+				++cnt;
+			    sum += cnt;
 			}
-			if (OX[j] == 'X')
-				score = 1;
 		}
+		
 		printf("%d\n", sum);
 	}
+		
+
 }

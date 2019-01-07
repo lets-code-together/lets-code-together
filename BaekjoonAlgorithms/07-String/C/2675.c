@@ -1,22 +1,26 @@
-/*각 문자 n번 반복해서 다시 출력하기*/
+/*문자열 S의 각 문자를 R번 반복해 새문자열P 생성*/
 #include <stdio.h>
+#include <string.h>
 
-int main() 
+int main()
 {
-	int n, r;
-	scanf("%d", &n);
-	char str[21] = { 0, };
-	int i, j, k;
-	for (i = 0; i < n; i++) 
+	int t, i, j, k, n, length;
+	char str[30] = " ";
+	
+	scanf("%d", &t); //반복횟수 입력
+	
+	for(i = 0; i < t; i++)
 	{
-		scanf("%d %s", &r, str);
-		for (j = 0; str[j] != 0; j++) 
+		scanf("%d%s", &n, str);
+		length = strlen(str);
+		
+		for(j = 0; j < length; j++)
 		{
-			for (k = 0; k < r; k++) 
-{
-				printf("%c", str[j]);
-			}
+			for(k = 0; k < n; k++) //문자 반복
+				putchar(str[j]);
 		}
-		printf("\n");
+		puts("");
 	}
+	
 }
+
