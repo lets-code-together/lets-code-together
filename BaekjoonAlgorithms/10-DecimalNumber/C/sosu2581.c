@@ -1,4 +1,4 @@
-/*M°ú N»çÀÌÀÇ ¼Ò¼ö Ã£±â*/
+/*MÂ°Ãº NÂ»Ã§Ã€ÃŒÃ€Ã‡ Â¼Ã’Â¼Ã¶ ÃƒÂ£Â±Ã¢*/
 #include <stdio.h>
 
 int Sosu(int n);
@@ -12,22 +12,22 @@ int main()
     scanf("%d", &M);
     scanf("%d", &N);
     for(i = M; i <= N; i++)
-	{
+    {
         if(Sosu(i))
-		{
+	{
             if(Min == 0)
-			{
-				Min = i;
-                Sum += i;
+	    {
+		    Min = i;
+                    Sum += i;
             }else
-                Sum += i;
-        }
+		    Sum += i;
+	}
     }
     if(Min != 0)
-	{
-        printf("%d\n%d", Sum, Min);
+    {
+	    printf("%d\n%d", Sum, Min);
     }else
-		printf("-1");
+	    printf("-1");
 }
 
 int Sosu(int n)
@@ -36,8 +36,8 @@ int Sosu(int n)
     if(n == 1) return 0;
     if(n == 2) return 1;
     for(i = 2; i < n; i++)
-	{
-        if(n % i == 0)
+    {
+	    if(n % i == 0)
             return 0;
 
     }
