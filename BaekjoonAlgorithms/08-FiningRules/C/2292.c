@@ -1,6 +1,7 @@
-/*¹úÁýÀÇ Áß¾Ó 1¿¡¼­ N±îÁö ÃÖ¼Ò¹æÀÇ°³¼ö¸¦ °ÅÃÄ¼­ °¥¶§ °ÅÄ¡´Â ¹æÀÇ ¼ö¸¦ Ãâ·ÂÇÏ¶ó*/
+/*ë²Œì§‘ì˜ ì¤‘ì•™ 1ì—ì„œ Nê¹Œì§€ ìµœì†Œë°©ì˜ê°œìˆ˜ë¥¼ ê±°ì³ì„œ ê°ˆë•Œ ê±°ì¹˜ëŠ” ë°©ì˜ ìˆ˜ë¥¼ ì¶œë ¥í•˜ë¼*/
 #include <stdio.h>
-main()
+
+int main()
 {
 	int i, n, cnt = 1, temp = 1;
 	scanf("%d", &n);
