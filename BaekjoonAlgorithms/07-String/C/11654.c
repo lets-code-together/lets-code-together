@@ -1,11 +1,10 @@
-/*¾Æ½ºÅ° ÄÚµå¸¦ ³ªÅ¸³»½Ã¿À*/
+/*ì•„ìŠ¤í‚¤ì½”ë“œ ì¶œë ¥í•˜ê¸°*/
 #include <stdio.h>
 
-int main(){
-		
-	char ch;
-	
-	scanf("%c", &ch);
-	
-	printf("%d", ch);
+int main()
+{
+	char d;
+	scanf_s("%c", &d);
+
+	printf("%d", d);
 }
