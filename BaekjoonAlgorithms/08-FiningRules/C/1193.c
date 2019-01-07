@@ -1,7 +1,7 @@
-/*X¹øÂ° ºÐ¼öÃ£±â*/
+/*Xë²ˆì§¸ ë¶„ìˆ˜ì°¾ê¸°*/
 #include <stdio.h>
 
-main() 
+int main() 
 {
 	int num = 1;
 	int n;
