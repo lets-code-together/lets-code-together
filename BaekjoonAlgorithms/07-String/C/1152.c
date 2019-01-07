@@ -1,8 +1,9 @@
+/*단어의 개수*/
 #include <stdio.h>
 #include <string.h>
 
-int main(){
-	
+int main()
+{
 	char str[1000003] = " ";
 	int i, cnt = 0, length = 0;
 	
@@ -10,8 +11,8 @@ int main(){
 	
 	length = strlen(str);
 	
-	for(i = 0; i < length; i++){
-
+	for(i = 0; i < length; i++)
+	{
 		if(str[i] == ' ')
 			cnt++;	
 	}
