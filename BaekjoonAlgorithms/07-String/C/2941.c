@@ -1,4 +1,4 @@
-/*ũ�ξ�Ƽ�� ���ĺ�*/
+/*크로아티아 알파벳*/
 #include <stdio.h>
  
 int main()
