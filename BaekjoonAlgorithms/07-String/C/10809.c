@@ -1,41 +1,40 @@
-/*´Ü¾î S¿¡¼­ °¢ ¾ËÆÄºªÀÌ ³ª¿À´Â À§Ä¡*/
+/*ë‹¨ì–´ Sì—ì„œ ê° ì•ŒíŒŒë²³ì´ ë‚˜ì˜¤ëŠ” ìœ„ì¹˜*/
 #include<stdio.h>
 
 int main()
 {
-	char S[101]; // ´Ü¾î S¸¦ ÀúÀåÇÒ º¯¼ö
-	char alphabet[26]; // ¾ËÆÄºªÀ» ÀúÀåÇÒ º¯¼ö
-	int position[26]; // °¢ ¾ËÆÄºª(26°³)ÀÌ ¸î¹øÂ°¿¡ ³ª¿À´ÂÁö¸¦ ÀúÀåÇÒ º¯¼ö 
+	char S[101]; // ë‹¨ì–´ Së¥¼ ì €ìž¥í•  ë³€ìˆ˜
+	char alphabet[26]; // ì•ŒíŒŒë²³ì„ ì €ìž¥í•  ë³€ìˆ˜
+	int position[26]; // ê° ì•ŒíŒŒë²³(26ê°œ)ì´ ëª‡ë²ˆì§¸ì— ë‚˜ì˜¤ëŠ”ì§€ë¥¼ ì €ìž¥í•  ë³€ìˆ˜ 
 
 	for (int i = 0; i < 26; i++) 
 	{
-		alphabet[i] = 'a' + i; // ¹è¿­¿¡ a~z±îÁö ÀúÀå
-		position[i] = -1; // result¸¦ -1·Î ÃÊ±âÈ­
+		alphabet[i] = 'a' + i; // ë°°ì—´ì— a~zê¹Œì§€ ì €ìž¥
+		position[i] = -1; // resultë¥¼ -1ë¡œ ì´ˆê¸°í™”
 	}
 
-	scanf("%s", S); // ´Ü¾î S¸¦ ÀÔ·Â ¹ÞÀ½
-
+	scanf("%s", S); // ë‹¨ì–´ Së¥¼ ìž…ë ¥ ë°›ìŒ
 	
-	int j; // ·çÇÁ ÀÎµ¦½º¿ë º¯¼ö
+	int j; // ë£¨í”„ ì¸ë±ìŠ¤ìš© ë³€ìˆ˜
 
 	for (int i = 0; i < 26; i++) 
 	{
 		j = 0;
-		while (1) //¹«ÇÑ·çÇÁ
-		{ // ´Ü¾î S¸¦ ÇÑ ±ÛÀÚ¾¿ »ìÆìº¸´Ù°¡
+		while (1) //ë¬´í•œë£¨í”„
+		{ // ë‹¨ì–´ Së¥¼ í•œ ê¸€ìžì”© ì‚´íŽ´ë³´ë‹¤ê°€
 			if (alphabet[i] == S[j]) 
-			{ // ´Ü¾î S¿¡¼­ ¾ËÆÄºª(a~z)ÀÌ ³ª¿À´Â °æ¿ì  
-				position[i] = j; // ±× À§Ä¡ °ªÀ» ÀúÀå
-				break; // Á¦ÀÏ Ã³À½ ³ª¿À´Â À§Ä¡¸¸ ¾Ë¸é µÇ¹Ç·Î ÀúÀå ÈÄ Å»Ãâ
+			{ // ë‹¨ì–´ Sì—ì„œ ì•ŒíŒŒë²³(a~z)ì´ ë‚˜ì˜¤ëŠ” ê²½ìš°  
+				position[i] = j; // ê·¸ ìœ„ì¹˜ ê°’ì„ ì €ìž¥
+				break; // ì œì¼ ì²˜ìŒ ë‚˜ì˜¤ëŠ” ìœ„ì¹˜ë§Œ ì•Œë©´ ë˜ë¯€ë¡œ ì €ìž¥ í›„ íƒˆì¶œ
 			}
 			if (S[j] == '\0') 
-				break; // ´Ü¾î S¸¦ ¸ðµÎ È®ÀÎÇÑ °æ¿ì Å»Ãâ
+				break; // ë‹¨ì–´ Së¥¼ ëª¨ë‘ í™•ì¸í•œ ê²½ìš° íƒˆì¶œ
 			j++;
 		}
 	}
 
 	for (int i = 0; i < 26; i++ ) 
-		printf("%d ", position[i]); //°á°ú Ãâ·Â
+		printf("%d ", position[i]); //ê²°ê³¼ ì¶œë ¥
 
 	return 0;
 }
