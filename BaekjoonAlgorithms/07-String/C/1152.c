@@ -1,27 +1,22 @@
-/*단어의 개수*/
+/*단어개수구하기*/
 #include <stdio.h>
-#include <string.h>
 
-int main()
+int main() 
 {
-	char str[1000003] = " ";
-	int i, cnt = 0, length = 0;
-	
-	gets(str);
-	
-	length = strlen(str);
-	
-	for(i = 0; i < length; i++)
+	char str[1000000];
+	int count = 0;
+	int i;
+	int space = 1;
+	scanf("%[^\n]s", str);
+
+	for (i = 0; str[i]; i++) 
 	{
-		if(str[i] == ' ')
-			cnt++;	
+		if (str[i] == ' ') space = 1;
+		else if (space) 
+		{
+			space = 0;
+			count++;
+		}
 	}
-	
-	if(str[0] == ' ')
-		cnt--;
-		
-	if (str[length - 1] == ' ')
-		cnt--;
-	
-	printf("%d", cnt + 1);
+	printf("%d", count);
 }

@@ -1,11 +1,11 @@
-/*¿¬¼ÓµÈ oÀÇ Á¡¼öÀÇ ÇÕ*/
+/*ì—°ì†ëœ oì˜ ì ìˆ˜ì˜ í•©*/
 #include <stdio.h>
 #include <string.h>
 
 int main()
 {
 	int i, cnt = 0, sum = 0, n, length = 0, j;
-	char OX[100] = " "; //¹®ÀÚ¿­ÀÇ °³¼ö
+	char OX[100] = " "; //ë¬¸ìì—´ì˜ ê°œìˆ˜
 	
 	scanf("%d", &n);
 	
@@ -18,9 +18,9 @@ int main()
 		
 		for(j = 0; j < length; j++)
 		{
-			if(OX[j] == 'X') //XÀÏ °æ¿ì 0À¸·Î ¼¾´Ù
+			if(OX[j] == 'X') //Xì¼ ê²½ìš° 0ìœ¼ë¡œ ì„¼ë‹¤
 				cnt = 0;
-			else //OÀÏ°æ¿ì Ä«¿îÆ®¸¦ ¼¼°í ÇÕÇØÁØ´Ù.
+			else //Oì¼ê²½ìš° ì¹´ìš´íŠ¸ë¥¼ ì„¸ê³  í•©í•´ì¤€ë‹¤.
 			{
 				++cnt;
 			    sum += cnt;
@@ -30,4 +30,5 @@ int main()
 		printf("%d\n", sum);
 	}
 		
+
 }

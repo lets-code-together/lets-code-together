@@ -1,4 +1,4 @@
-/*¿À¸§Â÷¼ø ascending ³»¸²Â÷¼ø descending µÑ´Ù ¾Æ´Ï¸é mixed*/
+/*ì˜¤ë¦„ì°¨ìˆœ ascending ë‚´ë¦¼ì°¨ìˆœ descending ë‘˜ë‹¤ ì•„ë‹ˆë©´ mixed*/
 #include <stdio.h>
 
 int main()
@@ -9,10 +9,10 @@ int main()
 	{
 		scanf("%d", &arr[i]);
 		
-		if(i + 1 == arr[i]) //1ºÎÅÍ Ä¿Áú°æ¿ì ¿À¸§Â÷¼ø
+		if(i + 1 == arr[i]) //1ë¶€í„° ì»¤ì§ˆê²½ìš° ì˜¤ë¦„ì°¨ìˆœ
 			a++;
 		
-		else if (8 - i == arr[i]) //¾Æ´Ï¸é ³»¸²Â÷¼ø
+		else if (8 - i == arr[i]) //ì•„ë‹ˆë©´ ë‚´ë¦¼ì°¨ìˆœ
 			d++;
 	}
 	
@@ -25,3 +25,4 @@ int main()
 	else
 		printf("mixed");
 }
+

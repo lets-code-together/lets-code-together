@@ -9,7 +9,7 @@ int main()
 	int count;
 	int max_char_count;
 	int max_count;
-        char max_char;
+  char max_char;
 	
 	scanf("%s", str);
  
@@ -52,5 +52,5 @@ int main()
 	printf("%c", max_char);
    
 	return 0;
- 
+
 }

@@ -1,6 +1,6 @@
 /*크로아티아 알파벳*/
 #include <stdio.h>
- 
+
 int main()
 {
     char alphabet[100];
@@ -26,4 +26,5 @@ int main()
     }
     printf("%d\n", count);
     return 0;
+
 }

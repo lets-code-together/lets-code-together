@@ -1,4 +1,4 @@
-/*¹®ÀÚ¿­ SÀÇ °¢ ¹®ÀÚ¸¦ R¹ø ¹İº¹ÇØ »õ¹®ÀÚ¿­P »ı¼º*/
+/*ë¬¸ìì—´ Sì˜ ê° ë¬¸ìë¥¼ Rë²ˆ ë°˜ë³µí•´ ìƒˆë¬¸ìì—´P ìƒì„±*/
 #include <stdio.h>
 #include <string.h>
 
@@ -7,7 +7,7 @@ int main()
 	int t, i, j, k, n, length;
 	char str[30] = " ";
 	
-	scanf("%d", &t); //¹İº¹È½¼ö ÀÔ·Â
+	scanf("%d", &t); //ë°˜ë³µíšŸìˆ˜ ì…ë ¥
 	
 	for(i = 0; i < t; i++)
 	{
@@ -16,10 +16,11 @@ int main()
 		
 		for(j = 0; j < length; j++)
 		{
-			for(k = 0; k < n; k++) //¹®ÀÚ ¹İº¹
+			for(k = 0; k < n; k++) //ë¬¸ì ë°˜ë³µ
 				putchar(str[j]);
 		}
 		puts("");
 	}
 	
 }
+
