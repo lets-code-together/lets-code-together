@@ -1,6 +1,6 @@
-/*MÀÌ»ó NÀÌÇÏÀÇ ¼Ò¼ö¸¦ ¸ðµÎ Ãâ·ÂÇØ¶ó(±âÁ¸ÀÇ forÀÌÁß±¸¹®X,¿¡¶ó½ºÅäÅ×³×½ºO */
+/*Mì´ìƒ Nì´í•˜ì˜ ì†Œìˆ˜ë¥¼ ëª¨ë‘ ì¶œë ¥í•´ë¼(ê¸°ì¡´ì˜ forì´ì¤‘êµ¬ë¬¸X,ì—ë¼ìŠ¤í† í…Œë„¤ìŠ¤O) */
 #include<stdio.h>
-main()
+int main()
 {
 	int M, N, i, j, a[1000001] = { 0, };
 	a[1] = 1;
