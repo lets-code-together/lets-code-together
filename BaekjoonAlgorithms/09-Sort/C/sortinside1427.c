@@ -1,11 +1,10 @@
-/*³»¸²Â÷¼ø*/
+/*ë‚´ë¦¼ì°¨ìˆœ*/
 #include <stdio.h>
 #include <string.h>
 
 int main()
 {
-	
-    char str[13] = " ", temp;
+	char str[13] = " ", temp;
 	int i, j, length;
 	
 	gets(str);
