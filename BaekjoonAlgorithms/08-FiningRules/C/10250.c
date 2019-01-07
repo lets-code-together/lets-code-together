@@ -1,9 +1,9 @@
-/*acmÈ£ÅÚ ¿ì¼±¼øÀ§¿¡ ¸Â´Â ¹æ Ã£±â*/
+/*acmí˜¸í…” ìš°ì„ ìˆœìœ„ì— ë§ëŠ” ë°© ì°¾ê¸°*/
 #include <stdio.h>
 
-int Room(int, int, int);
-main()
-{
+int main()
+{	
+	int Room(int, int, int);
 	int T, H, W, N;
 	int i;
 	scanf("%d", &T);
