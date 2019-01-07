@@ -1,4 +1,4 @@
-/*´Ü¾î°¡ ÁÖ¾îÁ³À»¶§ ´ë¼Ò¹®ÀÚ ±¸ºĞ¾øÀÌ °¡Àå ¸¹ÀÌ Á¸ÀçÇÏ´Â ´Ü¾î¸¦ ´ë¹®ÀÚ·Î Ãâ·Â ¿©·¯°³ÀÏ °æ¿ì ?·Î Ãâ·Â*/
+/*ë‹¨ì–´ê°€ ì£¼ì–´ì¡Œì„ë•Œ ëŒ€ì†Œë¬¸ì êµ¬ë¶„ì—†ì´ ê°€ì¥ ë§ì´ ì¡´ì¬í•˜ëŠ” ë‹¨ì–´ë¥¼ ëŒ€ë¬¸ìë¡œ ì¶œë ¥ ì—¬ëŸ¬ê°œì¼ ê²½ìš° ?ë¡œ ì¶œë ¥*/
 #include <stdio.h>
 #include <string.h>
  
@@ -8,20 +8,20 @@ int main()
 	int i, j;
 	int count;
 	int max_char_count;
-    int max_count;
-    char max_char;
+	int max_count;
+        char max_char;
+	
+	scanf("%s", str);
  
-    scanf("%s", str);
- 
-    for (i = 0; str[i]; i++) 
+	for (i = 0; str[i]; i++) 
 	{
 		if ('a' <= str[i] && str[i] <= 'z')
-        str[i] -= 32;
-    }
+			str[i] -= 32;
+	}
 	
 	max_count = -1;
  
-    for (i = 0; str[i]; i++) 
+	for (i = 0; str[i]; i++) 
 	{
 		count = 0;
 		
@@ -31,20 +31,19 @@ int main()
 			{
 				if (str[i] == str[j])
 					break;
-            }
+			}
 			else if (str[i] == str[j])
 				count++;
-       
-        }
+		}
 		if (max_count == count)
 			max_char_count++;
 
 		if (max_count < count) 
 		{
 			max_count = count;
-            max_char = str[i];
-            max_char_count = 1;
-        }
+                        max_char = str[i];
+                        max_char_count = 1;
+		}
 	}
  
 	if (max_char_count > 1)
