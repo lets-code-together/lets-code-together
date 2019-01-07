@@ -1,6 +1,7 @@
-/*´Ü¾î°³¼ö±¸ÇÏ±â*/
+/*ë‹¨ì–´ê°œìˆ˜êµ¬í•˜ê¸°*/
 #include <stdio.h>
-main() 
+
+int main() 
 {
 	char str[1000000];
 	int count = 0;
