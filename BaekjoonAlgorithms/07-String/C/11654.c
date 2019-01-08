@@ -1,4 +1,4 @@
-﻿/*아스키코드 출력하기*/
+/*아스키코드 출력하기*/
 #include <stdio.h>
 
 int main()
@@ -8,3 +8,4 @@ int main()
 
 	printf("%d", d);
 }
+
