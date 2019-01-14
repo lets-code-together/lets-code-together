@@ -1,9 +1,12 @@
 # 정수를 저장하는 스택을 구현한 다음, 입력으로 주어지는 명령을 처리하는 프로그램을 작성하시오.
+
 a = int(input())
 list = []
 
+
 def push(n):
     list.append(n)
+
 
 def pop():
     try:
@@ -11,8 +14,10 @@ def pop():
     except:
         print(-1)
 
+
 def size():
     return len(list)
+
 
 def empty():
     if size() == 0:
@@ -20,14 +25,17 @@ def empty():
     else:
         print("0")
 
+
 def top():
     try:
         print(list[-1])
     except:
         print(-1)
 
+
 for _ in range(a):
     cmd = input().split()
+
     if cmd[0] == 'push':
         push(cmd[1])
     elif cmd[0] == 'pop':

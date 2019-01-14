@@ -1,4 +1,7 @@
+# 중도포기
+
 T = int(input())
+
 while T > 0:
     PS = input()
     VPS_list = []
@@ -8,7 +11,7 @@ while T > 0:
             return 1
         elif x = p + p:
             return 1
-        elif x = 
+        elif x =
             return 1
     if VPS(PS) = 1:
         VPS_list.append(PS)
