@@ -3,5 +3,13 @@
 
 N = int(input())
 
-for i in range(1, N) :
-    print(' ' * (N-i) + '*' + ' ' * )
+# 첫째 줄
+print(' ' * (N-1) + '*')
+
+# 첫째 줄과 마지막 줄을 제외한 줄
+for i in range(1, N-1) :
+    print(' ' * (N-i-1) + '*' + ' ' * (2*i-1) + '*')
+
+# 마지막 줄
+if N > 1 :
+    print('*' * (2*N-1))
