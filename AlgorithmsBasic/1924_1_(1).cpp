@@ -7,10 +7,12 @@ int main()
 {
 	int month, day;
 	scanf("%d %d", &month, &day);
+	
 	for (int i = 0; i < month; i++) 
 	{
 		day += daysOfMonth[i];
 	}
 	printf("%s\n", dayOfWeek[day % 7]);
+	
 	return 0;
 }
