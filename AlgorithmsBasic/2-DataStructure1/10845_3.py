@@ -46,6 +46,7 @@ def back():
     except:
         print(-1)
 
+        
 for i in range(N):
     command = input().split()
 
