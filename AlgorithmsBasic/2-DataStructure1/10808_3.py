@@ -6,5 +6,3 @@ S = input()
 
 for alphabet in range(97, 123):
     print(S.count(chr(alphabet)), end=" ")
-
-# 다른 풀이도 참고해볼것!
