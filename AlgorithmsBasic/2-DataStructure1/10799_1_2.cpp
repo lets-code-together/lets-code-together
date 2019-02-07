@@ -37,7 +37,6 @@ int main(void)
 				s.pop();
 				cnt += 1;
 			}
-
 		}
 	}
 	cout << cnt;
