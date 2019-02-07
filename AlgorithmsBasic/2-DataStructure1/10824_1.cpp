@@ -1,8 +1,7 @@
-/*³× ÀÚ¿¬¼ö A, B, C, D°¡ ÁÖ¾îÁø´Ù. ÀÌ¶§, A¿Í B¸¦ ºÙÀÎ ¼ö¿Í C¿Í D¸¦ ºÙÀÎ ¼öÀÇ ÇÕÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.*/
+/*ë„¤ ìì—°ìˆ˜ A, B, C, Dê°€ ì£¼ì–´ì§„ë‹¤. ì´ë•Œ, Aì™€ Bë¥¼ ë¶™ì¸ ìˆ˜ì™€ Cì™€ Dë¥¼ ë¶™ì¸ ìˆ˜ì˜ í•©ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.*/
 #include<iostream>
 #include<cstdlib>
 #include<string>
-
 using namespace std;
 
 int main()
@@ -12,10 +11,10 @@ int main()
 	
 	cin >> a >> b >> c >> d;
 
-	result1 = to_string(a) + to_string(b); //to_string : integer¸¦ stringÀ¸·Î º¯È¯½ÃÄÑÁÖ´Â ÇÔ¼ö
-	result2 = to_string(c) + to_string(d); //stringÀ¸·Î º¯È¯ ÈÄ µÎ ¼ö¸¦ ÀÌ¾îºÙ¿©Áà¾ßÇÑ´Ù.
+	result1 = to_string(a) + to_string(b); //to_string : integerë¥¼ stringìœ¼ë¡œ ë³€í™˜ì‹œì¼œì£¼ëŠ” í•¨ìˆ˜
+	result2 = to_string(c) + to_string(d); //stringìœ¼ë¡œ ë³€í™˜ í›„ ë‘ ìˆ˜ë¥¼ ì´ì–´ë¶™ì—¬ì¤˜ì•¼í•œë‹¤.
 
-	long long A = stoll(result1); //stollÇÔ¼ö : stringÀ» long longÅ¸ÀÔÀ¸·Î º¯È¯½ÃÄÑÁØ´Ù.
+	long long A = stoll(result1); //stollí•¨ìˆ˜ : stringì„ long longíƒ€ì…ìœ¼ë¡œ ë³€í™˜ì‹œì¼œì¤€ë‹¤.
 	long long B = stoll(result2);
 
 	cout << A + B << endl;
