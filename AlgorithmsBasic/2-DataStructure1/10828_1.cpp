@@ -31,7 +31,8 @@ int main()
 			printf("%d\n", stack[top]);
 		else if (a[0] == 's')
 			printf("%d\n", top);
-		else if (a[0] == 'e') {
+		else if (a[0] == 'e') 
+		{
 			if (top == 0) printf("1\n");
 			else printf("0\n");
 		}
