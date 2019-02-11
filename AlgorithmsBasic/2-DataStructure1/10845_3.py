@@ -46,7 +46,11 @@ def back():
     except:
         print(-1)
 
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 20f0bb76a9b502ce5f0648b2f14837db06407920
 for i in range(N):
     command = input().split()
 
