@@ -1,8 +1,8 @@
 /*
-¼è¸·´ë±â´Â ÀÚ½Åº¸´Ù ±ä ¼è¸·´ë±â À§¿¡¸¸ ³õÀÏ ¼ö ÀÖ´Ù. 
- ¼è¸·´ë±â¸¦ ´Ù¸¥ ¼è¸·´ë±â À§¿¡ ³õ´Â °æ¿ì ¿ÏÀüÈ÷ Æ÷ÇÔµÇµµ·Ï ³õµÇ, ³¡Á¡Àº °ãÄ¡Áö ¾Êµµ·Ï ³õ´Â´Ù.
-°¢ ¼è¸·´ë±â¸¦ ÀÚ¸£´Â ·¹ÀÌÀú´Â Àû¾îµµ ÇÏ³ª Á¸ÀçÇÑ´Ù.
-·¹ÀÌÀú´Â ¾î¶² ¼è¸·´ë±âÀÇ ¾ç ³¡Á¡°úµµ °ãÄ¡Áö ¾Ê´Â´Ù. */
+ì‡ ë§‰ëŒ€ê¸°ëŠ” ìžì‹ ë³´ë‹¤ ê¸´ ì‡ ë§‰ëŒ€ê¸° ìœ„ì—ë§Œ ë†“ì¼ ìˆ˜ ìžˆë‹¤. 
+ ì‡ ë§‰ëŒ€ê¸°ë¥¼ ë‹¤ë¥¸ ì‡ ë§‰ëŒ€ê¸° ìœ„ì— ë†“ëŠ” ê²½ìš° ì™„ì „ížˆ í¬í•¨ë˜ë„ë¡ ë†“ë˜, ëì ì€ ê²¹ì¹˜ì§€ ì•Šë„ë¡ ë†“ëŠ”ë‹¤.
+ê° ì‡ ë§‰ëŒ€ê¸°ë¥¼ ìžë¥´ëŠ” ë ˆì´ì €ëŠ” ì ì–´ë„ í•˜ë‚˜ ì¡´ìž¬í•œë‹¤.
+ë ˆì´ì €ëŠ” ì–´ë–¤ ì‡ ë§‰ëŒ€ê¸°ì˜ ì–‘ ëì ê³¼ë„ ê²¹ì¹˜ì§€ ì•ŠëŠ”ë‹¤. */
 #include <iostream>
 #include <string>
 #include <stack>
@@ -11,7 +11,8 @@ using namespace std;
 stack<int> s;
 int ans = 0;
 
-int main() {
+int main() 
+{
 	char str[100100];
 	int len;
 	scanf("%s", str);
@@ -35,7 +36,6 @@ int main() {
 				ans++;
 			}
 		}
-
 	}
 	printf("%d", ans);
 }

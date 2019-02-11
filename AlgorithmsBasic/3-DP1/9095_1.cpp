@@ -1,19 +1,23 @@
-/*¼ýÀÚ¸¦ 1,2,3À» ÀûÀýÈ÷ ÀÌ¿ëÇÏ¿© ÇÕÀ¸·Î Ç¥ÇöÇÒ ¼ö ÀÖ´Â °æ¿ìÀÇ ¼ö*/
+/*ìˆ«ìžë¥¼ 1,2,3ì„ ì ì ˆížˆ ì´ìš©í•˜ì—¬ í•©ìœ¼ë¡œ í‘œí˜„í•  ìˆ˜ ìžˆëŠ” ê²½ìš°ì˜ ìˆ˜*/
 #include <iostream>
 using namespace std;
 
 int d[11];
-int main(void) {
+int main(void) 
+{
 	int t;
 	cin >> t;
 
-	while (t--) {
+	while (t--) 
+	{
 		int n;
 		cin >> n;
 		d[1] = 1;
 		d[2] = 2;
 		d[3] = 4;
-		for (int i = 4; i <= n; i++) {
+		
+		for (int i = 4; i <= n; i++)
+		{
 			d[i] = d[i - 1] + d[i - 2] + d[i - 3];
 		}
 		cout << d[n] << '\n';

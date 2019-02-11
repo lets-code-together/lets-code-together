@@ -2,20 +2,22 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-
 using namespace std;
-int main(void) {
-	// πÆ¿⁄ø≠ ¿‘∑¬
+
+int main(void) 
+{
+	// Î¨∏ÏûêÏó¥ ÏûÖÎ†•
 	string str;
 	cin >> str;
 
-	// Ω√∞£∫π¿‚µµ : O(N)
-	for (int i = 'a'; i <= 'z'; i++) {
-		// strπÆ¿⁄ø≠ √≥¿Ω∫Œ≈Õ ≥°±Ó¡ˆ 'a'∞™∫Œ≈Õ 'z'∞™±Ó¡ˆ¿« ∞≥ºˆ∏¶ ººº≠ π›»Ø«—¥Ÿ.
-		// Example: hello ¿œ∞ÊøÏ 'a'∫Œ≈Õ ∞™¿ª hello¿¸√º∏¶ ≈Ωªˆ«ÿº≠ ∞≥ºˆ∏¶ π›»Ø«—¥Ÿ. ±◊¿Ã»ƒ 'b' ~ 'z'±Ó¡ˆ ≈Ωªˆ
+	// ÏãúÍ∞ÑÎ≥µÏû°ÎèÑ : O(N)
+	for (int i = 'a'; i <= 'z'; i++) 
+	{
+		// strÎ¨∏ÏûêÏó¥ Ï≤òÏùåÎ∂ÄÌÑ∞ ÎÅùÍπåÏßÄ 'a'Í∞íÎ∂ÄÌÑ∞ 'z'Í∞íÍπåÏßÄÏùò Í∞úÏàòÎ•º ÏÑ∏ÏÑú Î∞òÌôòÌïúÎã§.
+		// Example: hello ÏùºÍ≤ΩÏö∞ 'a'Î∂ÄÌÑ∞ Í∞íÏùÑ helloÏ†ÑÏ≤¥Î•º ÌÉêÏÉâÌï¥ÏÑú Í∞úÏàòÎ•º Î∞òÌôòÌïúÎã§. Í∑∏Ïù¥ÌõÑ 'b' ~ 'z'ÍπåÏßÄ ÌÉêÏÉâ
 		cout << count(str.begin(), str.end(), i) << ' ';
-
 	}
+	
 	printf("\n");
 
 	return 0;
