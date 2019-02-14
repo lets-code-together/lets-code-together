@@ -10,8 +10,39 @@ B	커서 왼쪽에 있는 문자를 삭제함 (커서가 문장의 맨 앞이면
 P $	$라는 문자를 커서 왼쪽에 추가함
 '''
 
-initial_input = input()  # 초기에 편집기에 입력되어 있는 문자열
+left_str = list(input())  # 초기에 편집기에 입력되어 있는 문자열
+right_str = []  # 커서의 오른쪽에 위치하는 문자열
 N = int(input())  # 입력할 명령어의 개수
 
+for _ in range(N):
+    cmd = input().split()
 
-# 푸는중
+    if cmd[0] == 'L':
+        if len(left_str) == 0:
+            continue
+        c = left_str.pop()
+        right_str.append(c)
+    elif cmd[0] == 'D':
+        if len(right_str) == 0:
+            continue
+        c = right_str.pop()
+        left_str.append(c)
+    elif cmd[0] == 'B':
+        if len(left_str) == 0:
+            continue
+        left_str.pop()
+    elif cmd[0] == 'P':
+        left_str.append(cmd[1])
+
+while left_str:
+    c = left_str.pop()
+    right_str.append(c)
+
+output = ''
+
+while right_str:
+    output += right_str.pop()
+
+print(output)
+
+# 시간초과.....
