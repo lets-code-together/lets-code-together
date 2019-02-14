@@ -8,6 +8,8 @@ j = []
 for i in range(1,N+1):
     people.append(i)
 
+result = '<'
+r = []
 
 def josephus():
     while len(people) > 0:
@@ -21,9 +23,21 @@ def josephus():
 
             j.append(people.pop(0))
 
+    while len(j) != 0:
+        n = j.pop()
+        r.append(n)
+        r.append(',')
+
+    r.pop(-1)
 
 josephus()
-print(j)
+
+while len(r) != 0:
+    result += str(r.pop())
+
+
+result += '>'
+
+print(result)
 
 # 시간초과
-# 양끝에 <>출력하는법도 모르겠음..
