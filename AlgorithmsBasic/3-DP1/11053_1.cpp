@@ -1,4 +1,4 @@
-/*°¡Àå ±ä Áõ°¡ÇÏ´Â ¼ö¿­*/
+/*ê°€ì¥ ê¸´ ì¦ê°€í•˜ëŠ” ìˆ˜ì—´*/
 #include<iostream>
 #include<algorithm>
 using namespace std;
