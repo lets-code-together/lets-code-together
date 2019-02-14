@@ -11,6 +11,7 @@ result = 0
 for i in range(len(ps)):
     if ps[i] == '(':
         list.append('(')
+        
     # ')' 가 나왔을 떄, 쇠막대기의 끝을 나타내는지 레이저를 나타내는지 구분
     elif ps[i]  == ')':
         # 레이저
