@@ -1,4 +1,4 @@
-/*A+B���*/
+/*A+B입력받아서 A+B출력받기*/
 #include<iostream>
 using namespace std;
 
