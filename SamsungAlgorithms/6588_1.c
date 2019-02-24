@@ -1,4 +1,4 @@
-/**/
+/* 골드바흐 */
 #include<stdio.h>
 #define SIZE 1000000
 
