@@ -17,7 +17,7 @@ int main()
 
 	cin >> a >> b;
 	cout << gcd(a, b) << endl;
-	cout << gcd(a, b) * (a / gcd(a, b)) * (b / gcd(a, b)) << endl; //최소공배수 각 수를 최대공약수를 나눈값을 
+	cout << gcd(a, b) * (a / gcd(a, b)) * (b / gcd(a, b)) << endl; //최소공배수 각 수를 최대공약수를 나눈값을 곱해준다.
 	
 	return 0;
 }
