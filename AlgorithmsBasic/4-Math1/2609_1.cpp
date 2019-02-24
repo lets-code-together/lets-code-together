@@ -1,9 +1,9 @@
-/*ÃÖ´ë °ø¾à¼ö¿Í ÃÖ¼Ò°ø¹è¼ö À¯Å¬¸®µå È£Á¦¹ýÀ» »ç¿ëÇÑ ÃÖ´ë°ø¾à¼ö ±¸ÇÏ±â
- À¯Å¬¸®µå È£Á¦¹ý : a = bq + r a¿Í b¿Í rÀÇ ÃÖ´ë °ø¾à¼ö´Â °°´Ù Å«¼ö¿¡¼­ ÀÛÀº ¼ö¸¦ ³ª´² ³ª¸ÓÁö°¡ ³ª¿À¸é ³ª¸ÓÁö·Î ³ª´©°í ³ª¸ÓÁö°¡ ³ª¿ÀÁö ¾Ê´Â ³ª¸ÓÁöÀÏ¶§ ±× ³ª¸ÓÁö°¡ ÃÖ´ë°ø¾à¼öÀÌ´Ù.*/
+/*ìµœëŒ€ ê³µì•½ìˆ˜ì™€ ìµœì†Œê³µë°°ìˆ˜ ìœ í´ë¦¬ë“œ í˜¸ì œë²•ì„ ì‚¬ìš©í•œ ìµœëŒ€ê³µì•½ìˆ˜ êµ¬í•˜ê¸°
+ ìœ í´ë¦¬ë“œ í˜¸ì œë²• : a = bq + r aì™€ bì™€ rì˜ ìµœëŒ€ ê³µì•½ìˆ˜ëŠ” ê°™ë‹¤ í°ìˆ˜ì—ì„œ ìž‘ì€ ìˆ˜ë¥¼ ë‚˜ëˆ  ë‚˜ë¨¸ì§€ê°€ ë‚˜ì˜¤ë©´ ë‚˜ë¨¸ì§€ë¡œ ë‚˜ëˆ„ê³  ë‚˜ë¨¸ì§€ê°€ ë‚˜ì˜¤ì§€ ì•ŠëŠ” ë‚˜ë¨¸ì§€ì¼ë•Œ ê·¸ ë‚˜ë¨¸ì§€ê°€ ìµœëŒ€ê³µì•½ìˆ˜ì´ë‹¤.*/
 #include<iostream>
 using namespace std;
 
-int gcd(int a, int b) //À¯Å¬¸®µå È£Á¦¹ý Àç±Í·Î ³ªÅ¸³½°Í
+int gcd(int a, int b) //ìœ í´ë¦¬ë“œ í˜¸ì œë²• ìž¬ê·€ë¡œ ë‚˜íƒ€ë‚¸ê²ƒ
 {
 	if (b == 0)
 		return a;
@@ -17,7 +17,7 @@ int main()
 
 	cin >> a >> b;
 	cout << gcd(a, b) << endl;
-	cout << gcd(a, b) * (a / gcd(a, b)) * (b / gcd(a, b)) << endl;
+	cout << gcd(a, b) * (a / gcd(a, b)) * (b / gcd(a, b)) << endl; //ìµœì†Œê³µë°°ìˆ˜ ê° ìˆ˜ë¥¼ ìµœëŒ€ê³µì•½ìˆ˜ë¥¼ ë‚˜ëˆˆê°’ì„ 
 	
 	return 0;
 }
