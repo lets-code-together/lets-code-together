@@ -1,4 +1,4 @@
-/*ÇÕ ºÐÇØ*/
+/*í•© ë¶„í•´*/
 #include<iostream>
 #include<algorithm>
 #define mod 1000000000;
