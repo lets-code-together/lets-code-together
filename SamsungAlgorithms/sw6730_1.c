@@ -1,30 +1,31 @@
-/*sw 6730¹®Á¦ Çª´Â Áß ´Ù½Ã Ç®¾î¾ßÇÔ*/
 #include<stdio.h>
+#include<stdlib.h>//ì ˆëŒ€ê°’ í•¨ìˆ˜
 
 int main()
 {
-	int TC,N,max=0,min=0;
+	int TC, N, max = 0, min = 0;//TCëŠ” í…ŒìŠ¤íŠ¸ì¼€ì´ìŠ¤,Nì€ ë¸”ëŸ­ì˜ ê°œìˆ˜
 	int block[101] = { 0, };
-	
+
 	scanf("%d", &TC);
-	
+
 	for (int j = 1; j <= TC; j++)
 	{
 		scanf("%d", &N);
 		for (int i = 1; i <= N; i++)
 		{
-			scanf("%d", &block[i]);
-			
-			
-			if (block[i] - block[i + 1] > 0)
-				if (block[i] - block[i + 1] > max)
-					max = block[i] - block[i + 1];
-			if (block[i] - block[i + 1] < 0)
-				if (block[i] - block[i + 1] < min)
-					min = block[i] - block[i + 1];
+			scanf("%d", &block[i-1]);
 		}
-		printf("#%d %d %d\n", j, max, min);
+		for (int k = 0; k < N-1; k++)
+		{
+			if (block[k] - block[k + 1] > 0)
+				if (block[k] - block[k + 1] > min)
+					min = block[k] - block[k + 1];
+			if (block[k] - block[k + 1] < 0)
+				if (block[k] - block[k + 1] <= max)
+					max = block[k] - block[k + 1];
+		}
+		printf("#%d %d %d\n", j, abs(max), min);
 		max = 0; min = 0;
 	}
-	
+	return 0;
 }
