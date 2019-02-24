@@ -1,4 +1,4 @@
-/*입력받은대로 */
+/* 입력받은대로 출력하기 */
 #include <iostream>
 using namespace std;
 
