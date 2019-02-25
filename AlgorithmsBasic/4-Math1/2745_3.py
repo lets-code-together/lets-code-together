@@ -4,14 +4,17 @@
 def convert(N, B):
     answer = 0
 
-    for idx, i in enumerate(N[::-1]):
-        if ord(i) >= 65 and ord(i) <= 90:
-            answer += ord[i] * pow(int(B), idx)
-        else:
-            answer += int(i) * pow(int(B), idx)
+    for idx, i in enumerate(N):
+        idx = len(N) - idx - 1
+
+        try:
+            answer += int(i) * (B ** idx)
+        except:
+            answer += (ord(i) - 55) * (B ** idx)
 
     return answer
 
 
-N, B = map(str, input().split())
+N, B = input().split()
+B = int(B)
 print(convert(N, B))
