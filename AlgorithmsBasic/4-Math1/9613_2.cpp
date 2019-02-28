@@ -6,7 +6,10 @@ int t, n, arr[1000001], sum;
 
 int gcd(int arr, int b)
 {
-	if (b == 0) { return arr; }
+	if (b == 0)
+	{ 
+		return arr; 
+	}
 	return gcd(b, arr%b);
 }
 int main() {
