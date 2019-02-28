@@ -1,4 +1,4 @@
-/*GCD ÇÕ*/
+/*GCD í•©*/
 #include<iostream>
 using namespace std;
 
