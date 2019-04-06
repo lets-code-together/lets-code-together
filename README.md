@@ -1,5 +1,4 @@
 # lets-code-together
----------
 ## 스터디원
 - 김경민 [kkm1993](https://github.com/kkm1993)
 - 정아현 [jeongahyun](https://github.com/jeongahyun)
@@ -9,13 +8,13 @@
 ```
 lets-code-together/AlgorithmsBasic
 ```
-1 - InputOutput **[완료]**
-2 - DataStructure1 **[98%]**
-3 - DP1 **[33%]**
-4 - Math1 **[33]**
-5 - Sort1 **[0%]**
-6 - Graph1 **[0%]**
-7 - Tree1 **[0%]**
+1 - InputOutput **[완료]**  
+2 - DataStructure1 **[98%]**  
+3 - DP1 **[33%]**  
+4 - Math1 **[33]**  
+5 - Sort1 **[0%]**  
+6 - Graph1 **[0%]**  
+7 - Tree1 **[0%]**  
 
 ## 파일명 규칙
 - 문제번호_1.cpp : 경민
