@@ -1,11 +1,11 @@
-//¹İº¹¼ö¿­
+//ë°˜ë³µìˆ˜ì—´
 #include <iostream>
 
 using namespace std;
 
 int check[1000000];
 
-int pow(int x, int p) //¾î¶² ¼ö¸¦ p¹ø °öÇÑ´Ù
+int pow(int x, int p) //ì–´ë–¤ ìˆ˜ë¥¼ pë²ˆ ê³±í•œë‹¤
 {
 	int ans = 1;
 
@@ -16,7 +16,7 @@ int pow(int x, int p) //¾î¶² ¼ö¸¦ p¹ø °öÇÑ´Ù
 	return ans;
 }
 
-int next(int a, int p) //¾î¶² ¼ö¸¦ °¢ ÀÚ¸®¸¦ 10À¸·Î ³ª´©¸ç °¢ÀÚ¸®¼ö¸¦ p¹ø°öÇÑ´Ù.
+int next(int a, int p) //ì–´ë–¤ ìˆ˜ë¥¼ ê° ìë¦¬ë¥¼ 10ìœ¼ë¡œ ë‚˜ëˆ„ë©° ê°ìë¦¬ìˆ˜ë¥¼ pë²ˆê³±í•œë‹¤.
 {
 	int ans = 0;
 
@@ -30,13 +30,12 @@ int next(int a, int p) //¾î¶² ¼ö¸¦ °¢ ÀÚ¸®¸¦ 10À¸·Î ³ª´©¸ç °¢ÀÚ¸®¼ö¸¦ p¹ø°öÇÑ´Ù.
 
 int length(int a, int p, int cnt)
 {
-	if (check[a] != 0) //¹æ¹®ÇßÀ¸¸é ±×Àü ÀÎµ¦½º
+	if (check[a] != 0) //ë°©ë¬¸í–ˆìœ¼ë©´ ê·¸ì „ ì¸ë±ìŠ¤
 	{
-			return 
-				check[a] - 1; 
+		return check[a] - 1; 
 	}
 	check[a] = cnt;
-	int b = next(a, p); //a´ÙÀ½ ÀÌ¹Ç·Î cnt+1
+	int b = next(a, p); //aë‹¤ìŒ ì´ë¯€ë¡œ cnt+1
 	return length(b, p, cnt + 1);
 }
 int main()
