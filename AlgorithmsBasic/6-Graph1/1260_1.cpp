@@ -1,4 +1,4 @@
-#include <cstdio> //printf »ç¿ë
+#include <cstdio>
 #include <algorithm>
 #include <cstring>
 #include <vector>
