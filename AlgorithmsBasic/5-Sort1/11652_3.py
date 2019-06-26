@@ -7,19 +7,19 @@ import sys
 
 N = int(sys.stdin.readline())
 cards = []
+plus_count = [0] * N
+minus_count = [0] * N
+
 for i in range(N):
-    cards.append(sys.stdin.readline())
-
-card_num = []
-
-for i in cards:
-    if i in card_num:
-        continue
+    card = int(sys.stdin.readline())
+    if card >= 0 :
+        plus_count[card] += 1
     else:
-        card_num.append(i)
+        minus_count[card] += 1
 
-card_num.sort()
-count = [0] * len(card_num)
+if max(plus_count) > max(minus_count):
+    print(plus_count.index(max(plus_count)))
+else:
+    print((N - minus_count.index(max(minus_count))) * -1)
 
-for i in range(N):
-    count[card_num.index(max(cards[i]))] += 1
+# 런타임 에러
